@@ -1,12 +1,2 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'Santoshi';
-  src: url('/fonts/Santoshi-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  font-family: 'Santoshi', sans-serif;
-}
