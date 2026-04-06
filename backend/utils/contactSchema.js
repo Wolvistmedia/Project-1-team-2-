@@ -1,11 +1,9 @@
 const Joi = require("joi");
 
 const contactSchema = Joi.object({
-    firstName: Joi.string().required(),
-    lastName: Joi.string().optional(),
+    Name: Joi.string().required(),
     phone: Joi.string().required(),
     email: Joi.string().email().required(),
-    industry: Joi.string().optional(),
     message: Joi.string().required()
 });
 

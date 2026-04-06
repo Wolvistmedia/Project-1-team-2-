@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -12,7 +13,7 @@ app.use("/api/contact", contactRoutes);
 
 
 //database connection
-const MONGO_URL="mongodb://127.0.0.1:27017/Veersa";
+const MONGO_URL = process.env.MONGO_URL;
 
 
 //db connection
@@ -23,7 +24,7 @@ async function main() {
         await mongoose.connect(MONGO_URL);
         console.log("connected to DB");
     } catch (err) {
-        console.log(err);
+        console.error("DB connection error:", err.message);
     }
 }
 main();
@@ -43,11 +44,14 @@ app.use((err, req, res, next) => {
     let { statusCode = 500, message = "Something went wrong" } = err;
 
     res.status(statusCode).json({
-        message: message
-    });
+    success: false,
+    message: message
+});
 });
 
 //server
-app.listen(8080, ()=> {
-    console.log("server is listening ")
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });

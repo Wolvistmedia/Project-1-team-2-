@@ -6,9 +6,10 @@ module.exports.createContact = async (req, res, next) => {
         await newContact.save();
 
         res.status(201).json({
-            message: "Contact saved successfully"
-        });
-
+    success: true,
+    message: "Contact saved successfully",
+    data: newContact
+});
     } catch (err) {
         next(err);
     }
