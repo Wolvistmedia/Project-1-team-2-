@@ -3,7 +3,9 @@ import { motion } from "framer-motion"
 
 function Form() {
     return (
-        <div className="w-full py-24 px-4 md:px-10 lg:px-20 bg-white">
+        <div
+        id="form"
+        className="w-full py-24 px-4 md:px-10 lg:px-20 bg-white">
 
            
             <motion.div

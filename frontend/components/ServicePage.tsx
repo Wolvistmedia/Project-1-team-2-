@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 import Footer from "./Footer";
 import Form from "./Form";
 
-const Hero = () => {
+const ServicePage = () => {
     const slides = [
         {
             id: 1,
@@ -75,10 +75,10 @@ const Hero = () => {
 
     return (
         <>
-            <div className='relative flex flex-col w-full  overflow-hidden h-[95vh]  mt-2 items-center justify-center  text-center px-4 md:px-5 gap-6'>
+            <div className='relative flex flex-col w-full  overflow-hidden h-screen   items-center justify-center  text-center px-4 md:px-5 gap-6'>
 
 
-                <div className="absolute top-0  w-full h-full -z-10 overflow-hidden rounded-2xl">
+                <div className="absolute top-0  w-full h-full -z-10 overflow-hidden ">
                     <video autoPlay loop muted className="w-full h-full object-cover">
                         <source src="/hero1.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
@@ -184,4 +184,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default ServicePage
