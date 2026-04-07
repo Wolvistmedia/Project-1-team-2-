@@ -12,9 +12,11 @@ function Footer() {
 
               
                   {/* Logo */}
-                <div className="text-[#3A1A86] font-bold text-xl tracking-wide">
+                <Link
+                href={'/'}
+                className="text-[#3A1A86] font-bold text-xl tracking-wide">
                     777
-                </div>
+                </Link>
 
                 {/* Email */}
                 <div className="text-gray-700 text-sm">

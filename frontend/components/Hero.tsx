@@ -82,7 +82,8 @@ function Hero() {
                     We solve problems through technology pragmatism and rigor. Your go-to partner for digital transformation, AI enablement, and scalable software solutions.
                 </motion.p>
 
-                <motion.button initial={{ y: 40 }} animate={{ y: 0 }} transition={{ duration: 0.6 }} onClick={() => router.push('/Services')} className="px-5 flex gap-2 items-center py-3 rounded-full text-white font-medium bg-linear-to-r from-[#3A1A86] to-[#6A51A5] shadow-md hover:scale-105 transition">
+                <motion.button 
+                initial={{ y: 40 }} animate={{ y: 0 }} transition={{ duration: 0.6 }} onClick={() => router.push('/Services')} className="px-5 flex gap-2 items-center py-3 rounded-full text-white font-medium bg-linear-to-r from-[#3A1A86] to-[#6A51A5] shadow-md hover:scale-105 transition">
                     Explore Services
                     <ArrowRight className="text-xl" />
                 </motion.button>
