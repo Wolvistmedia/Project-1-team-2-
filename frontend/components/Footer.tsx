@@ -67,11 +67,11 @@ function Footer() {
                     className="cursor-pointer hover:underline">Careers</Link>
                     <span>|</span>
                     <Link
-                    href={'/Contact'}
+                    href={'/ContactUs'}
                     className="cursor-pointer hover:underline">Contact Us</Link>
                     <span>|</span>
                     <Link 
-                    href={'/Privacy'}
+                    href={'/PrivacyPolicy'}
                     className="cursor-pointer hover:underline">Privacy Policy</Link>
 
                 </div>

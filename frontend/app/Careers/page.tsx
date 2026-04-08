@@ -2,7 +2,7 @@ import CareerPage from '@/components/CareerPage'
 
 function page() {
   return (
-    <div>
+    <div className='bg-white/30'>
       <CareerPage />
     </div>
   )

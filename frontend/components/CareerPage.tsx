@@ -93,7 +93,7 @@ function CareerPage() {
 
   return (
     <>
-      <div className="relative w-full min-h-screen overflow-hidden">
+      <div className="relative w-full min-h-screen overflow-hidden ">
 
         <video autoPlay loop muted playsInline className="absolute w-full h-full object-cover">
           <source src="/hero1.mp4" type="video/mp4" />

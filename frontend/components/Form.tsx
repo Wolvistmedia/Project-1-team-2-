@@ -60,7 +60,7 @@ function Form() {
                 <div className="col-span-2 flex justify-center">
                     <button
                         type="submit"
-                        className="bg-linear-to-r from-[#3A1A86] to-[#6A51A5] text-white px-8 py-3 rounded-full font-medium hover:bg-gray-900 transition"
+                        className="bg-linear-to-r from-[#3A1A86] to-[#6A51A5] text-white px-8 py-3 rounded-full font-medium hover:bg-gray-900 transition cursor-pointer"
                     >
                         Send Message
                     </button>
