@@ -1,11 +1,11 @@
-import BlogPage from '@/components/BlogPage'
+import ContactPage from '@/components/ContactPage'
 import React from 'react'
 
 function page() {
   return (
     <div>
 
-        <BlogPage/>
+        <ContactPage/>
     </div>
   )
 }

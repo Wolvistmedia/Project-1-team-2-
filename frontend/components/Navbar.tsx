@@ -59,7 +59,9 @@ const Navbar = () => {
         </motion.div>
 
 
-        <button className="hidden md:block px-5 py-2 rounded-full text-white font-medium
+        <button
+        onClick={()=>router.push('/ContactUs')}
+        className="hidden md:block px-5 py-2 rounded-full text-white font-medium
         bg-linear-to-r from-[#3A1A86] to-[#6A51A5] shadow-md hover:scale-95 transition">
           Contact Us
         </button>
@@ -96,7 +98,9 @@ const Navbar = () => {
             </span>
           ))}
 
-          <button className="mt-4 px-4 py-2 rounded-full bg-linear-to-r from-[#3A1A86] to-[#6A51A5] text-white">
+          <button
+          onClick={()=>router.push('/ContactUs')}
+          className="mt-4 px-4 py-2 rounded-full bg-linear-to-r from-[#3A1A86] to-[#6A51A5] text-white">
             Contact Us
           </button>
 

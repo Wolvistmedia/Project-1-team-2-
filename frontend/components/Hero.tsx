@@ -59,7 +59,6 @@ function Hero() {
 
     return (
         <>
-            {/* ── HERO SECTION ── */}
             <motion.div className="relative flex flex-col items-center justify-center h-screen text-center px-4 md:px-5 gap-6">
                 <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
                     <video autoPlay loop muted className="w-full h-full object-cover">
@@ -83,7 +82,7 @@ function Hero() {
                 </motion.p>
 
                 <motion.button 
-                initial={{ y: 40 }} animate={{ y: 0 }} transition={{ duration: 0.6 }} onClick={() => router.push('/Services')} className="px-5 flex gap-2 items-center py-3 rounded-full text-white font-medium bg-linear-to-r from-[#3A1A86] to-[#6A51A5] shadow-md hover:scale-105 transition">
+                    initial={{ y: 40 }} animate={{ y: 0 }} transition={{ duration: 0.6 }} onClick={() => router.push('/Services')} className="px-5 flex gap-2 items-center py-3 rounded-full text-white font-medium bg-linear-to-r from-[#3A1A86] to-[#6A51A5] shadow-md hover:scale-105 transition">
                     Explore Services
                     <ArrowRight className="text-xl" />
                 </motion.button>
@@ -92,7 +91,6 @@ function Hero() {
                     <ArrowDown className="text-xl" />
                 </motion.div>
             </motion.div>
-
 
             <section className="relative w-full md:py-20 py-12 shadow-inner px-4 md:px-10 lg:px-20 overflow-hidden bg-[FAF7F3]/10">
                 <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="mb-12">
@@ -114,7 +112,6 @@ function Hero() {
                 </div>
             </section>
 
-
             <motion.div className="flex flex-col items-center justify-center py-10 px-4 md:px-10 lg:px-20">
                 <motion.p animate={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.6 }} className="text-[#7c6fff] text-xs font-extrabold tracking-[0.2em] uppercase mb-4">
                     What we do
@@ -122,7 +119,6 @@ function Hero() {
                 <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="font-bold text-2xl sm:text-3xl md:text-5xl lg:text-4xl uppercase text-black text-center mb-2">
                     Services & Technologies
                 </motion.h2>
-
 
                 <motion.div
                     initial={{ opacity: 0, y: -40 }}
@@ -156,9 +152,7 @@ function Hero() {
                         </div>
                     </div>
 
-                    {/* Controls */}
                     <div className="flex items-center justify-between mt-4 px-1">
-                        {/* Dots */}
                         <div className="flex gap-2">
                             {card.map((_, i) => (
                                 <button
@@ -169,7 +163,6 @@ function Hero() {
                             ))}
                         </div>
 
-                        {/* Prev / Next Buttons */}
                         <div className="flex gap-3">
                             <button
                                 onClick={prev}
@@ -189,35 +182,18 @@ function Hero() {
             </motion.div>
 
             <motion.div className="flex flex-col items-center w-full justify-center py-8 px-4 sm:px-6 md:px-10 lg:px-20">
-
-                <motion.p
-                    animate={{ opacity: 1, y: 0 }}
-                    initial={{ opacity: 0, y: -30 }}
-                    transition={{ duration: 0.6 }}
-                    className="text-[#7c6fff] text-xs font-extrabold tracking-[0.2em] uppercase mb-4 text-center"
-                >
+                <motion.p animate={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -30 }} transition={{ duration: 0.6 }} className="text-[#7c6fff] text-xs font-extrabold tracking-[0.2em] uppercase mb-4 text-center">
                     our impact
                 </motion.p>
 
-                <motion.h2
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-4xl uppercase text-black text-center mb-6"
-                >
+                <motion.h2 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-4xl uppercase text-black text-center mb-6">
                     numbers that define us
                 </motion.h2>
 
                 <motion.div className="w-full">
                     <div className="flex flex-col md:flex-row items-center justify-center text-center gap-8 md:gap-16 lg:gap-20">
 
-                        {/* Block 1 */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
-                            className="flex flex-col items-center"
-                        >
+                        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="flex flex-col items-center">
                             <span className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                                 875K
                             </span>
@@ -226,13 +202,7 @@ function Hero() {
                             </span>
                         </motion.div>
 
-                        {/* Block 2 */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.7 }}
-                            className="flex flex-col items-center max-w-xs"
-                        >
+                        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="flex flex-col items-center max-w-xs">
                             <span className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                                 16%
                             </span>
@@ -241,13 +211,7 @@ function Hero() {
                             </span>
                         </motion.div>
 
-                        {/* Block 3 */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8 }}
-                            className="flex flex-col items-center"
-                        >
+                        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center">
                             <span className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                                 200K
                             </span>
@@ -258,7 +222,6 @@ function Hero() {
 
                     </div>
                 </motion.div>
-
             </motion.div>
 
             <TeamSection />

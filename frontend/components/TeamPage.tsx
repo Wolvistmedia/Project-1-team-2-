@@ -29,7 +29,6 @@ function TeamPage() {
         { pos: "bottom-[10%] left-[25%]", delay: 1 },
     ]
 
-
     const teamPhotos = [
         { src: "/photo1.jpg", label: "Our People" },
         { src: "/photo2.jpg", label: "Leadership Team" },
@@ -39,7 +38,6 @@ function TeamPage() {
 
     return (
         <>
-            {/* ===== HERO SECTION — same as before ===== */}
             <div className="relative w-full h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-12 overflow-hidden">
 
                 <div className="absolute top-0 w-full h-full -z-10 overflow-hidden">
@@ -140,7 +138,6 @@ function TeamPage() {
                 </div>
             </div>
 
-            {/* ===== TAGLINE — same as before ===== */}
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -153,7 +150,6 @@ function TeamPage() {
                 </motion.div>
             </motion.div>
 
-            {/* ===== ✅ NEW — Team Photos Grid ===== */}
             <div className="px-4 md:px-16 py-12">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
@@ -178,7 +174,6 @@ function TeamPage() {
                                 height={450}
                                 className="w-full h-56 sm:h-64 md:h-72 object-cover transition-transform duration-500 group-hover:scale-105"
                             />
-                            {/* Hover overlay with label */}
                             <div className="absolute inset-0 bg-[#3A1A86]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                 <span className="text-white font-semibold text-lg">{photo.label}</span>
                             </div>

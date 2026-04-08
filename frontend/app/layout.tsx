@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 
 
 export const metadata: Metadata = {
-  title: "XYZ Website",
+  title: "777 Website",
   description: "Marketing Website",
 };
 

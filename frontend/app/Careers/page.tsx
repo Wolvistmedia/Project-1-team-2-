@@ -1,8 +1,10 @@
-import React from 'react'
+import CareerPage from '@/components/CareerPage'
 
 function page() {
   return (
-    <div>page</div>
+    <div>
+      <CareerPage />
+    </div>
   )
 }
 
