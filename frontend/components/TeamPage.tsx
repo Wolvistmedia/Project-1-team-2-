@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Form from './Form'
+
 import Footer from './Footer'
 
 function TeamPage() {
@@ -180,11 +180,117 @@ function TeamPage() {
                         </motion.div>
                     ))}
                 </motion.div>
+
+
+
+                <div className="px-4 md:px-20 py-20 bg-linear-to-b from-white to-[#f6f3ff]">
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="max-w-6xl mx-auto text-center mb-16"
+                    >
+                        <p className="text-[#7c6fff] text-xs font-extrabold tracking-[0.2em] uppercase mb-4">
+                            Our Culture
+                        </p>
+
+                        <h2 className="text-3xl md:text-5xl font-bold text-black leading-tight">
+                            Built by People Who <span className="text-[#3A1A86]">Think Different</span>
+                        </h2>
+
+                        <p className="text-gray-600 mt-6 text-base md:text-lg max-w-3xl mx-auto leading-7">
+                            We are a team driven by purpose, creativity, and execution. Our culture
+                            is rooted in innovation, collaboration, and a constant push to deliver
+                            meaningful impact through everything we build.
+                        </p>
+                    </motion.div>
+
+
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                            whileHover={{ y: -8 }}
+                            className="group bg-white/70 backdrop-blur-lg border border-[#e5dcff] p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
+                        >
+                            <h3 className="text-xl font-semibold text-[#3A1A86] mb-4">
+                                Innovation First
+                            </h3>
+                            <p className="text-gray-600 leading-7">
+                                We challenge conventional thinking and continuously explore new
+                                technologies to create smarter, faster, and more impactful solutions.
+                            </p>
+                        </motion.div>
+
+
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            whileHover={{ y: -8 }}
+                            className="group bg-linear-to-br from-[#3A1A86] to-[#6A51A5] text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 scale-105"
+                        >
+                            <h3 className="text-xl font-semibold mb-4">
+                                Strong Collaboration
+                            </h3>
+                            <p className="leading-7 text-white/90">
+                                We work as one team — blending ideas, skills, and perspectives to
+                                solve complex challenges and deliver real value together.
+                            </p>
+                        </motion.div>
+
+
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                            whileHover={{ y: -8 }}
+                            className="group bg-white/70 backdrop-blur-lg border border-[#e5dcff] p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
+                        >
+                            <h3 className="text-xl font-semibold text-[#3A1A86] mb-4">
+                                Growth Mindset
+                            </h3>
+                            <p className="text-gray-600 leading-7">
+                                We believe in continuous learning, improvement, and pushing limits —
+                                both as individuals and as a team.
+                            </p>
+                        </motion.div>
+
+                    </div>
+
+
+
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="mt-20 text-center max-w-4xl mx-auto"
+                    >
+                        <div className="w-16 h-1 bg-[#3A1A86] mx-auto mb-6 rounded-full" />
+
+                        <p className="text-gray-600 text-base md:text-lg leading-7">
+                            Together, we are more than just a team — we are a collective force
+                            building meaningful digital experiences, solving real-world problems,
+                            and shaping the future through innovation and execution.
+                        </p>
+                    </motion.div>
+
+                </div>
             </div>
 
-            <div id="form-section">
-                <Form />
-            </div>
+
 
             <Footer />
         </>

@@ -35,8 +35,8 @@ function ContactPage() {
               height={100}
               src={'/AddressIcon.webp'} />
             <h2 className="text-[#3A1A86] text-3xl font-bold">Address</h2>
-            <h4 className=""><span className="text-black font-bold text-md">US: </span>2510 E Sunset Road, Suite 5-971, Las Vegas NV 89110</h4>
-            <p className=""><span className="text-black font-bold text-md">INDIA:</span> 3rd Floor, Tower B, NSL Techzone IT SEZ, Sector 144, Noida</p>
+            <h4 className=""><span className="text-black font-bold text-md">US: </span>2510 E Sunset Road, Suite 5-971,  NV 89110</h4>
+            <p className=""><span className="text-black font-bold text-md">INDIA:</span> 3rd Floor, Tower B, NSL Techzone IT SEZ, Sector 1454, </p>
           </motion.div>
 
           <motion.div
