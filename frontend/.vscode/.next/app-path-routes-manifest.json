@@ -1,0 +1,11 @@
+{
+  "/Blog/page": "/Blog",
+  "/Careers/page": "/Careers",
+  "/ContactUs/page": "/ContactUs",
+  "/PrivacyPolicy/page": "/PrivacyPolicy",
+  "/Services/page": "/Services",
+  "/Team/page": "/Team",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/page": "/"
+}
