@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 import { Cpu, Code2, BarChart3, Factory, ArrowDown, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
 import TeamSection from "./TeamSection"
-import Form from "./Form"
+
 import Footer from "./Footer"
 
 const principles = [
@@ -225,7 +225,6 @@ function Hero() {
             </motion.div>
 
             <TeamSection />
-            <Form />
             <Footer/>
         </>
     )

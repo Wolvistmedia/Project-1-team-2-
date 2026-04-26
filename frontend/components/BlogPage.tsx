@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 function BlogPage() {
   const blogSections = [
     {
-      image: "/photo1.jpg",
+      image: "/blog1.png",
       heading1: "Data-Driven Insights & Big Data Analytics:",
       heading2: "Clean Technologies Leading the Way:",
       description1:
@@ -14,7 +14,7 @@ function BlogPage() {
       description2: "Renewable energy sources, energy-efficient appliances, electric vehicles, and carbon capture and storage mechanisms have emerged as formidable weapons in the fight against environmental degradation. These technologies empower companies to significantly reduce their carbon emissions and resource consumption. Transitioning to clean technologies not only mitigates environmental harm but also aligns with ESG goals related to environmental impact reduction.",
     },
     {
-      image: "/photo2.jpg",
+      image: "/blog4.jpg",
       heading1: "Advanced Data Analysis & AI & Machine Learning:",
       heading2: "Interactive Stakeholder Engagement through VR and AR:",
       description:
@@ -22,15 +22,15 @@ function BlogPage() {
       description2: "Virtual Reality (VR) and Augmented Reality (AR) platforms offer interactive and immersive experiences focused on ESG issues. These experiences cultivate awareness among employees, customers, and stakeholders, actively involving them in a company’s ESG initiatives. This engagement not only fosters a sense of shared responsibility but also strengthens a company’s social equity and governance practices.",
     },
     {
-      image: "/photo3.jpg",
-      heading1: "Real-Time Monitoring with IoT Devices:",
+      image: "/blog3.jpg",
+      heading1: "Real-Time Monitoring with IoT Devices:" ,
       heading2: "Blockchain for Transparency and Traceability:",
       description:
         "Internet of Things (IoT) devices enable the real-time monitoring of various environmental parameters, including energy consumption, emissions, and waste generation. This continuous data stream equips organizations with the information needed to pinpoint areas where they can reduce their environmental impact. As a result, businesses can drive sustainable practices by responding proactively to evolving environmental challenges.",
       description2: "Blockchain technology is elevating transparency and traceability within supply chains. This empowerment allows companies to validate the sustainability and ethicality of their products—a critical aspect of meeting ESG objectives and building consumer trust. Blockchain not only enhances governance standards but also supports the responsible sourcing of materials and products.",
     },
     {
-      image: "/photo3.jpg",
+      image: "/blog2.png",
       heading1: "Optimizing Sustainability with Digital Twins:",
       heading2: "Environmental Monitoring with Drones and Satellites:",
       description:
@@ -68,7 +68,7 @@ function BlogPage() {
                   src={blog.image}
                   alt="blog"
                   fill
-                  className="object-cover"
+                  className="object-cover w-full h-100"
                 />
               </motion.div>
 

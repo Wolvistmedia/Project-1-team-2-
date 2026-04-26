@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowDown, ArrowLeft, ArrowRight } from "lucide-react"
-import Form from "./Form"
+
 import Footer from "./Footer"
 
 function CareerPage() {
@@ -14,27 +14,27 @@ function CareerPage() {
   const [index, setIndex] = useState(0)
 
   const images = [
-    "/photo1.jpg",
-    "/photo2.jpg",
-    "/photo3.jpg",
-    "/photo2.jpg",
-    "/photo1.jpg",
-    "/photo3.jpg",
+    "/career1.jpeg",
+    "/career2.png",
+    "/career3.png",
+    "/career4.png",
+    "/career5.png",
+    "/career6.png",
   ]
   const testimonials = [
     {
       title: "Two Years of Amazing Opportunities",
       desc: "Two amazing years of start-up experience with multiple opportunities to wear different hats, solve complicated problem statements, perform under pressure, and never stop learning..",
-      name: "Harsh",
+      name: "Alexa",
       role: "Senior Engineer",
-      img: "/photo1.jpg",
+      img: "/Naina.png",
     },
     {
       title: "A Journey of Growth & Learning",
       desc: "Working here has been an incredible experience. I got exposure to real-world challenges and worked with an amazing team that constantly pushes you to grow.",
       name: "Aman",
       role: "Software Developer",
-      img: "/photo2.jpg",
+      img: "/Aman.png",
     },
   ]
 
@@ -121,7 +121,7 @@ function CareerPage() {
                     flexShrink: 0,
                   }}
                 >
-                  <Image src={img} alt="" fill sizes={`${cardWidth}px`} className="object-cover" />
+                  <Image src={img} alt="" fill sizes={`${cardWidth}px`} className="object-cover w-full h-100" />
                 </div>
               ))}
             </div>
@@ -208,8 +208,6 @@ function CareerPage() {
         </div>
       </motion.div>
 
-
-      <Form />
       <Footer />
     </>
   )

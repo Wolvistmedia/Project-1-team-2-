@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import Image from "next/image";
 import { useEffect, useState } from 'react'
 import Footer from "./Footer";
-import Form from "./Form";
+import Link from "next/link"
 
 const ServicePage = () => {
     const slides = [
@@ -38,26 +38,30 @@ const ServicePage = () => {
         {
             id: "digital-engineering",
             title: "Digital Engineering",
-            img: "/img2.webp",
-            desc: "777 is a strategic partner for end-to-end digitalization support, collaborating with our clients to deliver customized solutions. Propelled by innovation and agility, we drive digital transformation for our clients, enabling them to meet the dynamic demands of the digital consumer, while supporting their most critical goals, including business growth and operational efficiency. We bring together the disparate data sources, models, tools, and processes into a common framework, streamlining the implementation process while positioning for future scalability and flexibility. From creating a digital front door for patients to enabling physician – patient collaboration, we are at the forefront of transforming the consumer experience."
+            img: "/img1.jpg",
+            desc: "777 is a strategic partner for end-to-end digitalization support, collaborating with our clients to deliver customized solutions. Propelled by innovation and agility, we drive digital transformation for our clients, enabling them to meet the dynamic demands of the digital consumer, while supporting their most critical goals, including business growth and operational efficiency. We bring together the disparate data sources, models, tools, and processes into a common framework, streamlining the implementation process while positioning for future scalability and flexibility. From creating a digital front door for patients to enabling physician – patient collaboration, we are at the forefront of transforming the consumer experience.",
+            button: "Read more"
         },
         {
             id: "software-product-engineering",
             title: "Software Product Engineering",
-            img: "/img1.webp",
-            desc: "777 partners with software product providers, delivering engineering services to bring products to market faster. Services include product management, software development, quality assurance, and project management. Veersa helps clients navigate the entire product development process to deliver on time and with high quality. Our team goes beyond features and backlogs, providing expertise in innovating, designing, developing, testing, deploying and maintaining software product. With a keen eye toward exceptional user experience, our engagements span from technical debt elimination, to modernizing products from their legacy architecture, to enhancing product functionality, scalability and performance."
+            img: "/img2.jpg",
+            desc: "777 partners with software product providers, delivering engineering services to bring products to market faster. Services include product management, software development, quality assurance, and project management. Veersa helps clients navigate the entire product development process to deliver on time and with high quality. Our team goes beyond features and backlogs, providing expertise in innovating, designing, developing, testing, deploying and maintaining software product. With a keen eye toward exceptional user experience, our engagements span from technical debt elimination, to modernizing products from their legacy architecture, to enhancing product functionality, scalability and performance.",
+            button: "Read more"
         },
         {
             id: "ai-business-insights",
             title: "AI Lead Business Insights",
-            img: "/img3.webp",
-            desc: "777 uses big data analytics and AI to empower organizations to make timely data-driven decisions with compassion and intelligence. We help clients harness big data for business growth and positive social impact through deep subject matter knowledge, combined with practical expertise in leading edge data analytics and AI technologies. supporting them in their digital transformation journey. Throughout our engagements, we remain focused on our clients’ endgame – enabling informed decision-making for meaningful outcomes."
+            img: "/img3.jpg",
+            desc: "777 uses big data analytics and AI to empower organizations to make timely data-driven decisions with compassion and intelligence. We help clients harness big data for business growth and positive social impact through deep subject matter knowledge, combined with practical expertise in leading edge data analytics and AI technologies. supporting them in their digital transformation journey. Throughout our engagements, we remain focused on our clients’ endgame – enabling informed decision-making for meaningful outcomes.",
+            button: "Read more"
         },
         {
             id: "industrial-products",
             title: "Industry Products",
-            img: "/img4.webp",
-            desc: "777 offers Industry specific technology frameworks, tools and products to help build scalable customized solutions that support key business functions, while reducing time to maket. These frameworks and SaaS based solutions can be implemented as-is or readily configured and customized to meet unique client needs, while accelerating implementation timelines."
+            img: "/img4.jpg",
+            desc: "777 offers Industry specific technology frameworks, tools and products to help build scalable customized solutions that support key business functions, while reducing time to maket. These frameworks and SaaS based solutions can be implemented as-is or readily configured and customized to meet unique client needs, while accelerating implementation timelines.",
+            button: "Read more"
         },
     ];
 
@@ -155,14 +159,17 @@ const ServicePage = () => {
                                 <p className="text-black text-[16px] sm:text-[15px] md:text-[18px] leading-relaxed text-justify">
                                     {con.desc}
                                 </p>
+                                <Link href={`/Services/${con.id}`}>
+                                    <button className="px-5 py-2 mt-2 rounded-full text-white font-medium bg-linear-to-r from-[#3A1A86] to-[#6A51A5] shadow-md hover:scale-95  duration-300 transition cursor-pointer">
+                                        {con.button}</button>
+
+                                </Link>
                             </motion.div>
 
                         </div>
                     </div>
                 ))}
-            </div>
-
-            <Form />
+            </div >
             <Footer />
         </>
     )
