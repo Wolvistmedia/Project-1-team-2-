@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion"
-import { useState } from "react"
+import { useState, type ChangeEvent, type FormEvent } from "react"
 
 function Form() {
     const [formData, setFormData] = useState({
@@ -10,14 +10,14 @@ function Form() {
         message: ""
     })
 
-    const handleChange = (e) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         })
     }
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
         try {
